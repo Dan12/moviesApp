@@ -1,0 +1,14 @@
+<div class = "container">
+  <h1>Edit Movie</h1>
+  <form action = "/editmovie/<%=@movie.id%>">
+    <div class="form-group">
+      <label for="exampleInputPassword1">Name</label>
+      <input type="text" name ="name" class="form-control" placeholder="name" value="<%=@movie.name%>">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Poster Image Url</label>
+      <input type="text" name ="imgurl" class="form-control" placeholder="http://" value="<%=@movie.imgurl%>">
+    </div>
+    <input type="submit" class="btn btn-default">
+  </form>
+</div>
